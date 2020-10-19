@@ -40,9 +40,9 @@
                         {% for booking in bookings %}
                             {% if booking.Event == "1" %}                           
                                 {% if booking.Name == "NIL" %}
-                                    <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                                    <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} Empty Slot</button>
                                 {% else %}
-                                    <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                                    <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} {{ booking.Name }} </button>
                                 {% endif %}
                             {% endif %}
                         {% endfor %}    
@@ -56,9 +56,9 @@
                 {% for booking in bookings %}
                     {% if booking.Event == "1" %}                           
                         {% if booking.Name == "NIL" %}
-                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} Empty Slot</button>
                         {% else %}
-                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} {{ booking.Name }}</button>
                         {% endif %}
                     {% endif %}
                 {% endfor %}    
@@ -72,9 +72,9 @@
                 {% for booking in bookings %}
                     {% if booking.Event == "1" %}                           
                         {% if booking.Name == "NIL" %}
-                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-success col-2"> Day {{ booking.Day }} , {{ booking.Time }} Empty Slot</button>
                         {% else %}
-                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} </button>
+                            <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-2"> Day {{ booking.Day }} , {{ booking.Time }} {{ booking.Name }}</button>
                         {% endif %}
                     {% endif %}
                 {% endfor %}    
